@@ -550,7 +550,7 @@ body.no-titlebar .main-outer-wrapper {margin-top: 30px;}
 }
 .slide-info {
     padding: 25px 20px;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 5px;
     display: table;
     width: 100%;
@@ -558,7 +558,7 @@ body.no-titlebar .main-outer-wrapper {margin-top: 30px;}
 }
 .slide-content {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: middle;    
 }
 .carousel-caption h1 {
     color: #fff;
@@ -570,6 +570,7 @@ body.no-titlebar .main-outer-wrapper {margin-top: 30px;}
     margin-bottom: 5px;
     letter-spacing: 3px;
     padding: 0 250px 0 250px;
+    text-shadow: 0 1px 25px rgba(0, 0, 0, 1);
 }
 .carousel-caption p {
     text-align: center;
@@ -582,6 +583,7 @@ body.no-titlebar .main-outer-wrapper {margin-top: 30px;}
 }
 .intro-caption .inline {
     margin-bottom: 10px;
+    display: none;
 }
 
 .intro-caption i {
