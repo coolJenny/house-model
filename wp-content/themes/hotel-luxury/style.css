@@ -454,7 +454,7 @@ img { -ms-interpolation-mode: bicubic;border: 0;vertical-align:middle;height: au
 .top-bar-mail{padding-right:17px;background:url('assets/images/icon-mail.png') no-repeat right center;}
 
 /* Header */
-.header-outer-wrapper{background: #282828; box-shadow:0 5px 5px rgba(0, 0, 0, 0.1);-webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);position: relative;z-index: 100;}
+.header-outer-wrapper{background: #282828; box-shadow:0 5px 5px rgba(0, 0, 0, 0.1);-webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);position: fixed;width: 100%;z-index: 100;}
 
 .header-outer-wrapper h1{margin-bottom: 0;}
 
