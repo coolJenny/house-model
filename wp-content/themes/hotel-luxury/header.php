@@ -26,33 +26,6 @@
 
     <header id="masthead" class="site-header header-container-wrapper">
 
-        <div class="top-bar-outer-wrapper">
-            <div class="top-bar-wrapper container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="top-bar-left pull-left">
-                            <nav id="top-nav-id" class="top-nav slideMenu">
-    	                        <?php
-    
-                                wp_nav_menu( array(
-                                    'theme_location' => 'topbar',
-                                    'menu_id'        => 'topbar-menu'
-                                ) );
-    
-    	                        ?>
-                            </nav>
-                        </div>
-    
-                        <?php if ( is_active_sidebar( 'topbar-right' ) ) { ?>
-                        <div class="top-bar-right text-right pull-right">
-    	                    <?php dynamic_sidebar( 'topbar-right' ); ?>
-                        </div>
-                        <?php } ?>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-            </div><!-- END .top-bar-wrapper -->
-        </div> <!-- END .top-bar-outer-wrapper -->
         <div class="header-outer-wrapper">
             <div class="container">
                 <div class="row">
@@ -84,6 +57,9 @@
                             </a>
 
                             <nav id="primary-nav-id" class="primary-nav slideMenu">
+                                <p class="call">
+                                  <span class="pull-right"><i class="fa fa-phone"></i> Call: (703) 426-5555 [FREE ESTIMATE BUTTON]</span>
+                                </p>
 	                            <?php
 	                            wp_nav_menu( array(
 		                            'theme_location' => 'menu-1',
@@ -104,4 +80,4 @@
     <?php  do_action('hotel_luxury_before_main_content');  ?>
 
 
-	<div id="content" class="main-outer-wrapper container">
+	<div id="content" class="main-outer-wrapper container-fluid">
