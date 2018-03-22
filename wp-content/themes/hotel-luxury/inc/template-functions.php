@@ -190,42 +190,6 @@ function hotel_luxury_get_featured_posts(){
 }
 
 
-
-if ( ! function_exists( 'hotel_luxury_display_page_title' ) ) {
-	/**
-	 * Display page title
-	 */
-    function hotel_luxury_display_page_title() {
-
-	    if ( is_front_page() ) {
-		    $page_id = get_option( 'page_on_front' );
-        } elseif ( is_home() ) {
-		    $page_id = get_option( 'page_for_posts' );
-        } else {
-		    $page_id = get_the_ID();
-        }
-	    $hide_page_title = get_post_meta( $page_id, '_hide_page_title', true );
-
-	    if ( !$hide_page_title && ( !is_home() || !is_single() )  ) {
-		    ?>
-            <div class="row">
-                <div class="col-md-12">
-                    <?php if ( hotel_luxury_is_event() == true ) {} else { ?>
-                    <div class="page-title-wrapper">
-                        <h1 class="page-title left"><?php single_post_title(); ?> </h1>
-                        <div class="clear"></div>
-                    </div>
-                    <?php } ?>
-                </div>
-            </div>
-            <?php
-
-	    }
-    }
-}
-add_action( 'hotel_luxury_page_before_content', 'hotel_luxury_display_page_title' );
-
-
 if ( ! function_exists( 'hotel_luxury_display_title_bar' ) ) {
 	/**
 	 * Display title bar
